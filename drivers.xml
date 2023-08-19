@@ -1,0 +1,14 @@
+﻿<drivers>
+    <driver name="MS SQL Server" class="com.microsoft.sqlserver.jdbc.SQLServerDriver" jar="drivers/mssql/mssql-jdbc-12.2.0.jre11.jar">
+        <sql script="drivers/mssql/processes.sql"/>
+        <connString>jdbc:sqlserver://[host][:port];databaseName=[database];encrypt=false</connString>
+    </driver>
+    <driver name="PostgreSQL" class="org.postgresql.Driver" jar="drivers/postgresql/postgresql-42.5.1.jar">
+        <sql script="drivers/postgresql/processes.sql"/>
+        <connString>jdbc:postgresql://[host][:port]/[database]</connString>
+    </driver>
+    <driver name="Oracle" class="oracle.jdbc.driver.OracleDriver" jar="drivers/oracle/ojdbc11-23.2.0.0.jar">
+        <sql script="drivers/oracle/processes.sql"/>
+        <connString>jdbc:oracle:thin:@[host][:port]/[database]</connString>
+    </driver>
+</drivers>

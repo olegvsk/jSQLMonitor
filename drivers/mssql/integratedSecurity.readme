@@ -1,0 +1,9 @@
+Connecting with integrated authentication On Windows
+https://learn.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url
+
+The JDBC driver supports the use of Type 2 integrated authentication
+on Windows operating systems by using the integratedSecurity
+connection string property. To use integrated authentication,
+copy the mssql-jdbc_auth-<version>-<arch>.dll file to a directory
+on the Windows system path on the computer where the JDBC driver
+is installed.
